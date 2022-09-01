@@ -12,7 +12,7 @@ while restart == 1:
   print('Welcome your in Sly\'s quiz game.')
  
   # input code for the user's name
-  user_name = input('What is your User Name?')
+  user_name = input('What is your Name?')
  
   # code that prints instructions for completing the quiz
   print ('\nHi There ' + user_name + '! Lets\'s play a Question and Answer game or you could say a QUIZ!\n')
@@ -88,7 +88,7 @@ while restart == 1:
  
     # Start of question 4
  
-    print("Question 4: What Country makes a Sushi?")
+    print("Question 4: What Country makes a Ramen?")
     print("a: China")
     print("b: Korea")
     print("c: Japan")
