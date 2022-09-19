@@ -31,7 +31,7 @@ while restart == 1:
       i = 1
    
   # player's choice for difficulty
-  user_level_choice = input('What level do you like to start from, Level 1 or Level 2. Type level 1 or level 2:\n')
+  user_level_choice = input('So lets start from level 1. Type level 1:\n')
   if user_level_choice == 'level 1':
     # Start of question 1
     print("Question 1: Which country has a red and blue Taegeuk in its center?\n")
@@ -131,9 +131,16 @@ while restart == 1:
       print ('your score is {}\n\n'.format(score))  
 
  
-      print("Question 6:What is the Smallest Country in Asia?\n")
-      print("a: Maldives")
-      print("b: Singapore")
+    level_2 = input("You have reached level 2, do you wish to continue or exit?\n")
+    if level_2 == "continue" or level_2 == "yes":
+      print ('have 2 free points for keeping up\n!')
+      score += 2
+      print ('your score is {}\n\n'.format(score))  
+
+ 
+      print("Question 6: What is the Smallest Country in Asia?\n")
+      print("a: Singapore")
+      print("b: Maldives")
  
       response = input("What is your answer to this question?\n")
       if response == "b":
@@ -146,10 +153,10 @@ while restart == 1:
  
  
  
-      print("Question 7: 4. Who made basketball?\n")
-      print("a: James Naismith ")
-      print("b: William Morgan")
-      print("c: Jim Thorpe")
+      print("Question 7: Biggest Country in Asia?\n")
+      print("a: China ")
+      print("b: India ")
+      print("c: Indonesia ")
  
       response = input("What is your answer to this question?\n")
       if response == "a":
@@ -161,10 +168,10 @@ while restart == 1:
       print("your score is {}\n".format(score))
  
  
-      print("Question 8: What is a turnover?\n")
-      print("a:When the two teams switch.")
-      print("b:  The different ways that possession of the ball goes from one team to another.")
-      print("c:A player is transferred to the other team during a game.")
+      print("Question 8: Where is the Capital of Asia located?\n")
+      print("a:  Seoul.")
+      print("b:  Beijing.")
+      print("c:  Tokyo.")
    
      
       response = input("What is your answer to this question?")
@@ -176,10 +183,10 @@ while restart == 1:
       score -= 1
       print("your score is {}\n".format(score))
  
-      print("Question 9: What does BEEF mean?\n")
-      print("a: Balance, Eyes, Elbow, Follow Through")
-      print("b: Basketball, Elbow, Endline, Free-Throw")
-      print("c: Box and One, Euro Step, Elevator Screen, Field Goal")
+      print("Question 9: How many states are there in Asia?\n")
+      print("a: 49")
+      print("b: 34")
+      print("c: 57")
      
  
       response = input("What is your answer to this question?\n")
@@ -192,11 +199,11 @@ while restart == 1:
       print("your score is {}\n".format(score))
  
  
-      print("Question 10: The main responsibility of the “center” player is to…\n")
-      print("a: make baskets ")
-      print("b: steal the ball and block attacks")
-      print("c: Tennis")
-      print("d:  secure rebounds and defend the paint")
+      print("Question 10: How many languages in Asia?\n")
+      print("a: 2000 ")
+      print("b: 3000")
+      print("c: 2300")
+      print("d:  1500")
  
       response = input("What is your answer to this question?\n")
       if response == "c":
@@ -211,11 +218,11 @@ while restart == 1:
         print('Wow amazing performance try this bonus question!\n\n')
  
       if score>8 :
-        print('Bonus Question: MVP of 2018 NBA final was?')
-        print('a: Cleveland Cavaliers')
-        print("b: Papatoetoe High School")
-        print("c: PHS")
-        print("d: None of the above\n")
+        print('Bonus Question: Richest Country in Asia?')
+        print('a: Korea')
+        print("b: Singapore")
+        print("c: China")
+        print("d: Japan\n")
  
       if score>8 :
         response = input("What is your answer to this question?\n")
@@ -243,18 +250,5 @@ while restart == 1:
     else:
       quit()
  
-  else:
-  
-    print("your Final score is {}!\n\n".format(score))
      
-    print("THANKS FOR PLAYING!")
  
-    PLAYERS_FEEDBACK = input(" Please rate this quiz out of ten and tell us what we could improve on \n")
- 
-    play_again = input("Do you want to restart/play again? Yes or No\n")
- 
-    if play_again == "Yes" or play_again == "yes":
-        restart = 1
-    else:
-        restart = 0
-        exit()
